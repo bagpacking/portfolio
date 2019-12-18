@@ -19,7 +19,7 @@
     
     <header>
         <div class="left">
-            <h1><a href="#a">Hdac</a></h1>
+       <h1><!--      <a href="#a">Hdac</a> --><img src="./images/logo1.png" style="width:140px; height:86px;" href="/index.jsp"></h1>
             <a href="#a" class="all">all Menu</a>
             <div class="nav">
                 <h2>Menu</h2>
@@ -46,43 +46,70 @@
         </ul>
     </header>
     <div class="dim"></div>
+      <div id="main" class="scroll-container">
+     <section class="section1"> 
     <div class="main">
-      <h1 style=" padding-top: 89px;">
-  <p  class="typewrite" data-period="2000" data-type='[ "Hi, Im Lee.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+      <h1 >
+  <p  style ="color: white;"class="typewrite" data-period="2000" data-type='[ "Hi, Im Lee.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
     <span class="wrap"></span>
     
     </div>
+    </section>
+<!--     <div class="about"> 
     
-    <div class="about">
     
-    
-    </div>
+  </div> -->
+
+  <section class="section2">
        <div class="skill">
     <h2>Skills</h2>
     <p>분야별 기술 소개</p>
-     
-     
       <div class="skill_div">
     <div class="font">
-    <p>HTML5,CSS JAVASCRIPT, Jquery</p>
+    <img src="./images/webskill.png">
+    <br>
+    <b>Web Skills</b>
+    <p>HTML5, CSS JAVASCRIPT, Jquery, AJAX</p>
     </div>
     <div class="back">
-    <p>JSP,PHP</p>
+     <img src="./images/languge.png">
+       <br>
+    <b>Language</b>
+    <p>JSP, PHP</p>
     </div>
     <div class="etc">
-    <p>linux,Git,AWS 서버구축</p>
+     <img src="./images/server.png">
+            <br>
+    <b>Server, etc</b>
+    <p>linux, AWS 서버구축, Git 형상관리</p>
     </div>
+    
+     <div class="db">
+     <img src="./images/db.png">
+            <br>
+    <b>Database</b>
+    <p>MYSQLDB, ORACLEDB</p>
+    </div>
+    
    </div>
     </div>
-  
+  </section>
+  	<section class="section3">
      <div class="project">
-    
+    	 <h2>Project</h2>
+
     
     </div>
+    </section>
+  <section class="section4">  
      <div class="contact">
     
     
     </div>
+    </section>
+    </div>
+    
+    
 </body>
 </html>
 
@@ -91,7 +118,14 @@
 
 
 
-
+	<script type="text/javascript">
+		new fullScroll({
+			displayDots: true,
+			dotsPosition: 'left',
+			animateTime: 0.7,
+			animateFunction: 'ease'
+		});
+	</script>
 
 
 
