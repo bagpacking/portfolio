@@ -14,6 +14,10 @@
 <link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" media="( min-width:701px ) and ( max-width:1000px )" href="css/tablet.css">
 <link rel="stylesheet" media="( min-width:0px ) and ( max-width:700px )" href="css/mobile.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 <body>
     
@@ -95,16 +99,37 @@
     </div>
   </section>
   	<section class="section3">
+  
      <div class="project">
     	 <h2>Project</h2>
+<div>
+<ul class="bxslider">
+	<%
+	int i=0;
+	for(i=0; i<3; i++){
+		%>
+		<li><a href="#"><div style="width:100%; height:100%; display:inline-flex">
+
+		
+		<div style="border:1px solid black; width:50%;">project <%=i %></div><div style="border:1px solid black; width:50%;">project <%=i %>
+		<br>asdfsdafsadf<br>asdfsadfsadfsadf<br>asdfasdf</div>
+		</div></a></li>  		
+<%  		
+  		
+  	} %>
+
+
+</ul>
+</div>
+
 
     
     </div>
     </section>
   <section class="section4">  
      <div class="contact">
-    
-    
+     <b>Contact</b>
+
     </div>
     </section>
     </div>
@@ -113,19 +138,32 @@
 </body>
 </html>
 
-
-
-
-
-
-	<script type="text/javascript">
+<script type="text/javascript">
 		new fullScroll({
 			displayDots: true,
 			dotsPosition: 'left',
 			animateTime: 0.7,
 			animateFunction: 'ease'
 		});
+		
+		
+		
+		$(document).ready(function(){
+			$('.slider').bxSlider();
+			
+		});
 	</script>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
