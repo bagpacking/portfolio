@@ -49,7 +49,7 @@
 <!--         <li class="join"><a href="#a">Sign In</a></li> -->
         </ul>
     </header>
-    <div class="dim"></div>
+    <div class="dim" style=" z-index: 999;  height: 200px;"></div>
       <div id="main" class="scroll-container">
      <section class="section1"> 
     <div class="main">
